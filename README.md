@@ -9,7 +9,9 @@ hand ends up for each one, using forward kinematics from Modern Robotics.
 - `batch_fk.py` — reads the input, computes each hand position, writes the output
 - `positions.csv` — output: x, y, z of the hand for each row
 
-## Run it
+## Run it    
+pip install numpy modern_robotics
+    python batch_fk.py
 ## Checking it
 The second row uses the same angles as my UR5 CoppeliaSim simulation. 
 The script's output (0.48, 0.634, 0.308) matches the simulator's result.
